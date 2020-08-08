@@ -23,7 +23,14 @@ namespace Chess
 
 
             // number of players = {0, 1, 2}
-            this.m_nPlayers = nPlayers;
+            if (nPlayers == 3)
+            {
+                this.m_nPlayers = 2;
+            }
+            else
+            {
+                this.m_nPlayers = nPlayers;
+            }
             // white always starts
             this.Turn = Player.WHITE;
 
@@ -31,7 +38,14 @@ namespace Chess
             this.Board = new ChessBoard();
             if (setupBoard)
             {
-                this.Board.SetInitialPlacement();
+                if (nPlayers == 3)
+                {
+                    this.Board.SetInitialPlacement(true);
+                }
+                else
+                {
+                    this.Board.SetInitialPlacement(false);
+                }
             }
 
             // update ui

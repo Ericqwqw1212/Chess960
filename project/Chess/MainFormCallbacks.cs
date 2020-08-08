@@ -72,6 +72,10 @@ namespace Chess
             {
                 NewGame(2);
             }
+            else if (button.Text.StartsWith("New Chess960"))
+            {
+                NewGame(3);
+            }
         }
 
         private void Difficulty(object sender, EventArgs e)

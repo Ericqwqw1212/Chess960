@@ -126,7 +126,7 @@ namespace Chess
             return fitness;
         }
 
-        public void SetInitialPlacement()
+        public void SetInitialPlacement(bool chess960 = false)
         {
             for (int i = 0; i < 8; i++)
             {
@@ -134,27 +134,76 @@ namespace Chess
                 SetPiece(Piece.PAWN, Player.BLACK, i, 6);
             }
 
-            SetPiece(Piece.ROOK, Player.WHITE, 0, 0);
-            SetPiece(Piece.ROOK, Player.WHITE, 7, 0);
-            SetPiece(Piece.ROOK, Player.BLACK, 0, 7);
-            SetPiece(Piece.ROOK, Player.BLACK, 7, 7);
+            if (!chess960)
+            {
+                SetPiece(Piece.ROOK, Player.WHITE, 0, 0);
+                SetPiece(Piece.ROOK, Player.WHITE, 7, 0);
+                SetPiece(Piece.ROOK, Player.BLACK, 0, 7);
+                SetPiece(Piece.ROOK, Player.BLACK, 7, 7);
 
-            SetPiece(Piece.KNIGHT, Player.WHITE, 1, 0);
-            SetPiece(Piece.KNIGHT, Player.WHITE, 6, 0);
-            SetPiece(Piece.KNIGHT, Player.BLACK, 1, 7);
-            SetPiece(Piece.KNIGHT, Player.BLACK, 6, 7);
+                SetPiece(Piece.KNIGHT, Player.WHITE, 1, 0);
+                SetPiece(Piece.KNIGHT, Player.WHITE, 6, 0);
+                SetPiece(Piece.KNIGHT, Player.BLACK, 1, 7);
+                SetPiece(Piece.KNIGHT, Player.BLACK, 6, 7);
 
-            SetPiece(Piece.BISHOP, Player.WHITE, 2, 0);
-            SetPiece(Piece.BISHOP, Player.WHITE, 5, 0);
-            SetPiece(Piece.BISHOP, Player.BLACK, 2, 7);
-            SetPiece(Piece.BISHOP, Player.BLACK, 5, 7);
+                SetPiece(Piece.BISHOP, Player.WHITE, 2, 0);
+                SetPiece(Piece.BISHOP, Player.WHITE, 5, 0);
+                SetPiece(Piece.BISHOP, Player.BLACK, 2, 7);
+                SetPiece(Piece.BISHOP, Player.BLACK, 5, 7);
 
-            SetPiece(Piece.KING, Player.WHITE, 4, 0);
-            SetPiece(Piece.KING, Player.BLACK, 4, 7);
-            Kings[Player.WHITE] = new position_t(4, 0);
-            Kings[Player.BLACK] = new position_t(4, 7);
-            SetPiece(Piece.QUEEN, Player.WHITE, 3, 0);
-            SetPiece(Piece.QUEEN, Player.BLACK, 3, 7);
+                SetPiece(Piece.KING, Player.WHITE, 4, 0);
+                SetPiece(Piece.KING, Player.BLACK, 4, 7);
+                Kings[Player.WHITE] = new position_t(4, 0);
+                Kings[Player.BLACK] = new position_t(4, 7);
+                SetPiece(Piece.QUEEN, Player.WHITE, 3, 0);
+                SetPiece(Piece.QUEEN, Player.BLACK, 3, 7);
+            }
+            else
+            {
+                List<int> positions = new List<int>() { 0, 1, 2, 3, 4, 5, 6, 7 };
+                int kingPos = new Random().Next(1, 7);
+                positions.Remove(kingPos);
+                int rookA = new Random().Next(0, kingPos);
+                positions.Remove(rookA);
+                int rookB = new Random().Next(kingPos + 1, 8);
+                positions.Remove(rookB);
+                int bishopA = positions[new Random().Next(0, positions.Count)];
+                positions.Remove(bishopA);
+                int bishopB = -1;
+                while (bishopB == -1 || bishopB % 2 == bishopA % 2)
+                {
+                    bishopB = positions[new Random().Next(0, positions.Count)];
+                }
+                positions.Remove(bishopB);
+                int knightA = positions[new Random().Next(0, positions.Count)];
+                positions.Remove(knightA);
+                int knightB = positions[new Random().Next(0, positions.Count)];
+                positions.Remove(knightB);
+                int queen = positions[new Random().Next(0, positions.Count)];
+                positions.Remove(bishopA);
+
+                SetPiece(Piece.ROOK, Player.WHITE, rookA, 0);
+                SetPiece(Piece.ROOK, Player.WHITE, rookB, 0);
+                SetPiece(Piece.ROOK, Player.BLACK, rookA, 7);
+                SetPiece(Piece.ROOK, Player.BLACK, rookB, 7);
+
+                SetPiece(Piece.KNIGHT, Player.WHITE, knightA, 0);
+                SetPiece(Piece.KNIGHT, Player.WHITE, knightB, 0);
+                SetPiece(Piece.KNIGHT, Player.BLACK, knightA, 7);
+                SetPiece(Piece.KNIGHT, Player.BLACK, knightB, 7);
+
+                SetPiece(Piece.BISHOP, Player.WHITE, bishopA, 0);
+                SetPiece(Piece.BISHOP, Player.WHITE, bishopB, 0);
+                SetPiece(Piece.BISHOP, Player.BLACK, bishopA, 7);
+                SetPiece(Piece.BISHOP, Player.BLACK, bishopB, 7);
+
+                SetPiece(Piece.KING, Player.WHITE, kingPos, 0);
+                SetPiece(Piece.KING, Player.BLACK, kingPos, 7);
+                Kings[Player.WHITE] = new position_t(kingPos, 0);
+                Kings[Player.BLACK] = new position_t(kingPos, 7);
+                SetPiece(Piece.QUEEN, Player.WHITE, queen, 0);
+                SetPiece(Piece.QUEEN, Player.BLACK, queen, 7);
+            }
         }
 
         public void SetPiece(Piece piece, Player player, int letter, int number)

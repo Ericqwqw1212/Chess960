@@ -1,0 +1,9 @@
+C:\Users\Eric\Desktop\ExistingCode\Chess960\Chess960\bin\debug\Chess.exe
+C:\Users\Eric\Desktop\ExistingCode\Chess960\Chess960\bin\debug\Chess.pdb
+C:\Users\Eric\Desktop\ExistingCode\Chess960\Chess960\project\Chess\obj\x86\Debug\Chess.csprojAssemblyReference.cache
+C:\Users\Eric\Desktop\ExistingCode\Chess960\Chess960\project\Chess\obj\x86\Debug\Chess.MainForm.resources
+C:\Users\Eric\Desktop\ExistingCode\Chess960\Chess960\project\Chess\obj\x86\Debug\Chess.Properties.Resources.resources
+C:\Users\Eric\Desktop\ExistingCode\Chess960\Chess960\project\Chess\obj\x86\Debug\Chess.csproj.GenerateResource.cache
+C:\Users\Eric\Desktop\ExistingCode\Chess960\Chess960\project\Chess\obj\x86\Debug\Chess.csproj.CoreCompileInputs.cache
+C:\Users\Eric\Desktop\ExistingCode\Chess960\Chess960\project\Chess\obj\x86\Debug\Chess.exe
+C:\Users\Eric\Desktop\ExistingCode\Chess960\Chess960\project\Chess\obj\x86\Debug\Chess.pdb
