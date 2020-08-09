@@ -1,0 +1,14 @@
+C:\Users\Eric\Desktop\ExistingCode\Chess960\Chess960\project\Chess_UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Eric\Desktop\ExistingCode\Chess960\Chess960\project\Chess_UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Eric\Desktop\ExistingCode\Chess960\Chess960\project\Chess_UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Eric\Desktop\ExistingCode\Chess960\Chess960\project\Chess_UnitTest\bin\Debug\Chess_UnitTest.dll
+C:\Users\Eric\Desktop\ExistingCode\Chess960\Chess960\project\Chess_UnitTest\bin\Debug\Chess_UnitTest.pdb
+C:\Users\Eric\Desktop\ExistingCode\Chess960\Chess960\project\Chess_UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Eric\Desktop\ExistingCode\Chess960\Chess960\project\Chess_UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Eric\Desktop\ExistingCode\Chess960\Chess960\project\Chess_UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Eric\Desktop\ExistingCode\Chess960\Chess960\project\Chess_UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Eric\Desktop\ExistingCode\Chess960\Chess960\project\Chess_UnitTest\obj\Debug\Chess_UnitTest.csprojAssemblyReference.cache
+C:\Users\Eric\Desktop\ExistingCode\Chess960\Chess960\project\Chess_UnitTest\obj\Debug\Chess_UnitTest.csproj.CoreCompileInputs.cache
+C:\Users\Eric\Desktop\ExistingCode\Chess960\Chess960\project\Chess_UnitTest\obj\Debug\Chess_UnitTest.csproj.CopyComplete
+C:\Users\Eric\Desktop\ExistingCode\Chess960\Chess960\project\Chess_UnitTest\obj\Debug\Chess_UnitTest.dll
+C:\Users\Eric\Desktop\ExistingCode\Chess960\Chess960\project\Chess_UnitTest\obj\Debug\Chess_UnitTest.pdb

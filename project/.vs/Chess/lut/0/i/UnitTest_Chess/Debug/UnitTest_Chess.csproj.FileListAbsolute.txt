@@ -1,0 +1,7 @@
+C:\Users\Eric\Desktop\ExistingCode\Chess960\Chess960\project\.vs\Chess\lut\0\b\project\UnitTest_Chess\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Eric\Desktop\ExistingCode\Chess960\Chess960\project\.vs\Chess\lut\0\b\project\UnitTest_Chess\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Eric\Desktop\ExistingCode\Chess960\Chess960\project\.vs\Chess\lut\0\b\project\UnitTest_Chess\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Eric\Desktop\ExistingCode\Chess960\Chess960\project\.vs\Chess\lut\0\b\project\UnitTest_Chess\bin\Debug\UnitTest_Chess.dll
+C:\Users\Eric\Desktop\ExistingCode\Chess960\Chess960\project\.vs\Chess\lut\0\i\UnitTest_Chess\Debug\UnitTest_Chess.csproj.CoreCompileInputs.cache
+C:\Users\Eric\Desktop\ExistingCode\Chess960\Chess960\project\.vs\Chess\lut\0\i\UnitTest_Chess\Debug\UnitTest_Chess.csproj.CopyComplete
+C:\Users\Eric\Desktop\ExistingCode\Chess960\Chess960\project\.vs\Chess\lut\0\i\UnitTest_Chess\Debug\UnitTest_Chess.dll
